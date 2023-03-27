@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: silence-auth
+  main:
+    allow-bean-definition-overriding: true
+  zipkin:
+    base-url: http://106.13.192.32:9411
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1
+    web: #Spring Cloud Sleuth 针对 Web 组件的配置项，例如说 SpringMVC
+      enabled: true
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        # 配置文件的环境
+        group: dev
+        # 配置文件的格式
+        file-extension: yaml
+        # 配置中心的地址
+        server-addr: 106.13.192.32:8848
+        #命名空间
+        namespace: quiet
+
+      discovery:
+        server-addr: 106.13.192.32:8848
+        group: dev
+        namespace: quiet
+        service: silence-auth
+        ip: 106.13.192.32
+
+
+  thymeleaf:
+    prefix: classpath:/views/
+    suffix: .html
+    cache: false
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+  datasource:
+    url: jdbc:mysql://106.13.192.32:3306/user_db?useUnicode=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+server:
+  port: 9086
+
+
+logging:
+  level:
+    com.alibaba.nacos: WARN

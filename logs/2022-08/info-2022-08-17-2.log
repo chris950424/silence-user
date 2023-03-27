@@ -1,0 +1,62 @@
+2022-08-17 10:27:45,754 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2022-08-17 10:27:46,162 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2022-08-17 10:27:46,177 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2022-08-17 10:27:46,190 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2022-08-17 10:27:46,192 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2022-08-17 10:27:46,221 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2022-08-17 10:27:46,848 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=79b3a204-4cfd-3b01-bc57-fbf24f1207ec
+2022-08-17 10:27:47,031 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7ae590f6' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:27:47,039 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:27:47,233 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2022-08-17 10:27:47,239 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2022-08-17 10:27:47,240 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2022-08-17 10:27:47,240 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-17 10:27:47,339 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2022-08-17 10:27:47,340 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1106 ms
+2022-08-17 10:27:47,724 [,,,] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:596 [main] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userFacade': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.silence.api.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2022-08-17 10:27:48,737 [,,,] WARN  zipkin2.reporter.AsyncReporter$BoundedAsyncReporter:342 [main] - Timed out waiting for in-flight spans to send
+2022-08-17 10:27:48,744 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Stopping service [Tomcat]
+2022-08-17 10:27:48,761 [,,,] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:136 [main] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-17 10:27:48,778 [,,,] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40 [main] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.silence.api.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.silence.api.UserService' in your configuration.
+
+2022-08-17 10:27:48,779 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-08-17 10:27:48,779 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2022-08-17 10:30:39,381 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2022-08-17 10:30:39,737 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2022-08-17 10:30:39,750 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2022-08-17 10:30:39,764 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2022-08-17 10:30:39,766 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2022-08-17 10:30:39,822 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2022-08-17 10:30:40,400 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=6be992cb-7d11-3134-ad04-aad36140f08d
+2022-08-17 10:30:40,554 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7ae590f6' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:30:40,562 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:30:40,741 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2022-08-17 10:30:40,747 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2022-08-17 10:30:40,747 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2022-08-17 10:30:40,748 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-08-17 10:30:40,823 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2022-08-17 10:30:40,823 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 986 ms
+2022-08-17 10:30:41,750 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-17 10:30:41,995 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-08-17 10:30:42,265 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c07023, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b643d6e, org.springframework.security.web.header.HeaderWriterFilter@13f7c165, org.springframework.security.web.authentication.logout.LogoutFilter@7c6fc278, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@3407ded1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d67bf4d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fdede3a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a45c218, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13ae87a6, org.springframework.security.web.session.SessionManagementFilter@156eeff1, org.springframework.security.web.access.ExceptionTranslationFilter@58e4aa67, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3331800f]
+2022-08-17 10:30:42,274 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72c175f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@32f45e15, org.springframework.security.web.header.HeaderWriterFilter@f13e0a2, org.springframework.security.web.authentication.logout.LogoutFilter@b5bddfe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5570dc21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e7151b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ef7ae2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9fd3b61, org.springframework.security.web.session.SessionManagementFilter@329efc61, org.springframework.security.web.access.ExceptionTranslationFilter@15fd3088, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@691a5c3a]
+2022-08-17 10:30:42,512 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-17 10:30:42,660 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2022-08-17 10:30:42,674 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2022-08-17 10:30:42,690 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.7.19:9086 register finished
+2022-08-17 10:30:42,752 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 3.815 seconds (JVM running for 4.455)

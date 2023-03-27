@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.silence.user.infrastructure.dao.UserMapper">
+
+    <select id="getUserByUsername" resultType="com.silence.user.infrastructure.repository.DO.UserDO">
+        select *
+        from t_user
+        where username = #{username}
+    </select>
+
+    <select id="getUserAdminByUsername" resultType="com.silence.user.infrastructure.repository.DO.UserDO">
+        select *
+        from t_admin_user
+        where username = #{username}
+    </select>
+
+    <select id="findPermissionsByUserId" resultType="java.lang.String">
+        SELECT p.code
+        FROM t_user u,
+             t_user_role ur,
+             t_role_permission rp,
+             t_permission p
+        WHERE u.id = ur.user_id
+          AND ur.role_id = rp.role_id
+          AND rp.permission_id = p.id
+          AND u.id = #{id}
+    </select>
+
+
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="id">
+        insert into t_user
+        values (#{id}, #{username}, #{password}, #{fullname}, #{mobile})
+    </insert>
+
+
+    <insert id="addRoleForUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO t_user_role
+        VALUES (#{uid},
+                (SELECT id FROM t_role WHERE role_name = '用户'),
+                NOW(),
+                NULL)
+    </insert>
+
+</mapper>

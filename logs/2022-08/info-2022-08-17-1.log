@@ -1,0 +1,32 @@
+2022-08-17 10:27:49,181 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2022-08-17 10:27:49,547 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2022-08-17 10:27:49,560 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2022-08-17 10:27:49,573 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2022-08-17 10:27:49,576 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2022-08-17 10:27:49,627 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2022-08-17 10:27:50,432 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=1452e191-cd78-37b1-b0bd-e964d6d456de
+2022-08-17 10:27:50,598 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:27:50,600 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:27:50,602 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-17 10:27:51,196 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: f0d4647e-c6b1-435c-bf99-9a7a635c48f9
+
+2022-08-17 10:27:51,307 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2022-08-17 10:27:51,307 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2022-08-17 10:27:51,307 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2022-08-17 10:27:51,308 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2022-08-17 10:27:51,308 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2022-08-17 10:27:51,308 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2022-08-17 10:27:51,308 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2022-08-17 10:27:51,309 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2022-08-17 10:27:51,309 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2022-08-17 10:27:51,309 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2022-08-17 10:27:51,309 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2022-08-17 10:27:51,309 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2022-08-17 10:27:51,310 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-08-17 10:27:51,637 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-08-17 10:27:51,832 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-17 10:27:52,082 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2022-08-17 10:27:52,197 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 106.13.192.32:9071 register finished
+2022-08-17 10:27:52,219 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 3.488 seconds (JVM running for 4.113)

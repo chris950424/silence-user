@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "secure.white-list",
+      "type": "java.lang.String",
+      "description": "Description for secure.white-list."
+    },
+    {
+      "name": "secure.need-check",
+      "type": "java.lang.String",
+      "description": "Description for secure.need-check."
+    },
+    {
+      "name": "secure.white-list",
+      "type": "java.lang.String",
+      "description": "Description for secure.white-list."
+    }
+  ] }
