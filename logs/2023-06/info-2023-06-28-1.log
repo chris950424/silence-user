@@ -1,0 +1,37 @@
+2023-06-28 03:02:47,387 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:169 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://120.24.205.36:8848， err : Read timed out
+2023-06-28 03:02:47,478 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:189 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - no available server, currentServerAddr : http://120.24.205.36:8848
+2023-06-28 03:02:47,479 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:454 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [fixed-120.24.205.36_8848-quiet] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 03:02:47,506 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:640 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 09:13:33,531 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-10] - 用户名:zhangsan
+2023-06-28 09:48:41,894 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-3] - 用户名:zhangsan
+2023-06-28 09:52:56,564 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-6] - 用户名:zhangsan
+2023-06-28 09:55:52,704 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-9] - 用户名:zhangsan
+2023-06-28 10:02:37,095 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-2] - 用户名:zhangsan
+2023-06-28 10:57:51,709 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-6] - 用户名:zhangsan
+2023-06-28 11:12:12,852 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-9] - 用户名:zhangsan
+2023-06-28 11:25:43,300 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-2] - 用户名:zhangsan
+2023-06-28 14:36:42,446 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-4] - 用户名:zhangsan

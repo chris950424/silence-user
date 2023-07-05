@@ -1,0 +1,231 @@
+2023-06-28 03:02:31,784 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:169 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://120.24.205.36:8848， err : Read timed out
+2023-06-28 03:02:31,822 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:189 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - no available server, currentServerAddr : http://120.24.205.36:8848
+2023-06-28 03:02:31,823 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:454 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [fixed-120.24.205.36_8848-quiet] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 03:02:31,825 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:640 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 09:12:05,170 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-28 09:12:05,170 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-28 09:12:05,170 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-28 09:12:05,175 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-28 09:12:05,290 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-28 09:12:05,301 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-28 09:12:05,311 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-28 09:12:12,877 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-28 09:12:12,878 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-28 09:12:12,881 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-28 09:12:12,887 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-28 09:12:12,907 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-28 09:12:12,936 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-28 09:12:17,472 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-28 09:12:17,873 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-28 09:12:17,883 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-28 09:12:17,893 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-28 09:12:17,894 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-28 09:12:17,914 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-28 09:12:18,556 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=47dc7567-9f92-38a4-a53b-c0f14376507b
+2023-06-28 09:12:18,771 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@17134190' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-28 09:12:18,780 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-28 09:12:19,045 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-28 09:12:19,052 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-28 09:12:19,053 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-28 09:12:19,053 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-28 09:12:19,135 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-28 09:12:19,136 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1211 ms
+2023-06-28 09:12:20,223 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-28 09:12:20,513 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-28 09:12:20,788 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36e358de, org.springframework.security.web.context.SecurityContextPersistenceFilter@70940cb8, org.springframework.security.web.header.HeaderWriterFilter@10f192d8, org.springframework.security.web.authentication.logout.LogoutFilter@2e1c8027, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@d7c4fcb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1b901f7b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b868ef0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31ab75a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bed5828, org.springframework.security.web.session.SessionManagementFilter@20923380, org.springframework.security.web.access.ExceptionTranslationFilter@5c13534a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8d52313]
+2023-06-28 09:12:20,799 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6dd1f239, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a490518, org.springframework.security.web.header.HeaderWriterFilter@23909b3, org.springframework.security.web.authentication.logout.LogoutFilter@14980819, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19542115, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7890fbf9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32ae11c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28d97205, org.springframework.security.web.session.SessionManagementFilter@1977b0df, org.springframework.security.web.access.ExceptionTranslationFilter@670aac24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6920fa35]
+2023-06-28 09:12:21,010 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-28 09:12:21,180 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-28 09:12:21,194 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-28 09:12:21,207 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-28 09:12:21,261 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 4.225 seconds (JVM running for 5.34)
+2023-06-28 09:13:25,676 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-28 09:13:25,677 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-28 09:13:25,678 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-28 09:13:29,503 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-28 09:13:29,858 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-28 09:13:33,428 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-28 09:13:33,619 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-28 09:14:10,650 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-28 09:14:10,650 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-28 09:14:10,650 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-28 09:14:10,650 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-28 09:14:10,704 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-28 09:14:10,706 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-28 09:14:10,712 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-28 09:14:18,538 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-28 09:14:18,538 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-28 09:14:18,539 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-28 09:14:18,539 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-28 09:14:18,541 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-28 09:14:18,552 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-28 09:19:03,762 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-28 09:19:14,003 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-28 09:19:14,014 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-28 09:19:14,025 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-28 09:19:14,026 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-28 09:19:14,065 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-28 09:19:14,785 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=47dc7567-9f92-38a4-a53b-c0f14376507b
+2023-06-28 09:19:15,025 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7cc1f72c' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-28 09:19:15,038 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-28 09:19:15,291 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-28 09:19:15,298 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-28 09:19:15,299 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-28 09:19:15,300 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-28 09:19:15,389 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-28 09:19:15,390 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1311 ms
+2023-06-28 09:19:16,490 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-28 09:19:16,744 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-28 09:19:17,032 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ace6611, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a30f6b1, org.springframework.security.web.header.HeaderWriterFilter@726e29d, org.springframework.security.web.authentication.logout.LogoutFilter@11fb1691, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@1693d505, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10f60e36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34588991, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77aeba9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a689979, org.springframework.security.web.session.SessionManagementFilter@77fecd2c, org.springframework.security.web.access.ExceptionTranslationFilter@42095996, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@64de9fa4]
+2023-06-28 09:19:17,046 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d94a966, org.springframework.security.web.context.SecurityContextPersistenceFilter@341889a1, org.springframework.security.web.header.HeaderWriterFilter@3b850bb7, org.springframework.security.web.authentication.logout.LogoutFilter@34f32575, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f370472, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29693b1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a225534, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24bdd996, org.springframework.security.web.session.SessionManagementFilter@6802c10e, org.springframework.security.web.access.ExceptionTranslationFilter@626ff077, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6771fc29]
+2023-06-28 09:19:17,229 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-28 09:19:17,419 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-28 09:19:17,434 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-28 09:19:17,450 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-28 09:19:17,514 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 296.609 seconds (JVM running for 297.415)
+2023-06-28 09:21:08,168 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-28 09:21:08,169 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-28 09:21:08,171 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 2 ms
+2023-06-28 09:44:14,140 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-28 09:44:17,105 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-28 09:45:05,648 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s608ms845µs500ns).
+2023-06-28 09:46:01,505 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-28 09:46:50,333 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m12s315ms835µs).
+2023-06-28 09:48:43,253 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-28 09:51:34,296 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-28 09:52:49,741 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s687ms462µs400ns).
+2023-06-28 09:52:57,658 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-3] - 用户id:3客户端：client1
+2023-06-28 09:55:42,928 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-5] - 用户名:zhangsan客户端：client1
+2023-06-28 09:55:53,057 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-5] - 用户id:3客户端：client1
+2023-06-28 09:56:42,180 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-6] - 用户名:zhangsan客户端：client1
+2023-06-28 09:59:43,981 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s740ms321µs).
+2023-06-28 10:01:59,374 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s165ms188µs800ns).
+2023-06-28 10:02:40,613 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-6] - 用户id:3客户端：client1
+2023-06-28 10:03:37,019 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s414ms694µs200ns).
+2023-06-28 10:08:28,744 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m48s351ms289µs500ns).
+2023-06-28 10:12:12,756 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m9s239ms128µs200ns).
+2023-06-28 10:57:49,742 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m15s432ms979µs).
+2023-06-28 10:57:49,742 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-7] - 用户名:zhangsan客户端：client1
+2023-06-28 10:57:53,725 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-7] - 用户id:3客户端：client1
+2023-06-28 11:01:46,027 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m26s238ms112µs400ns).
+2023-06-28 11:06:28,629 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s604ms589µs600ns).
+2023-06-28 11:07:57,744 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m29s113ms417µs300ns).
+2023-06-28 11:11:11,758 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m8s992ms380µs600ns).
+2023-06-28 11:06:50,367 [,,,] ERROR com.alibaba.nacos.client.naming:617 [com.alibaba.nacos.naming.beat.sender] - [NA] failed to request
+java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:862) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:859) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1604) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:433) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:167) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 11:06:50,367 [,,,] ERROR com.alibaba.nacos.client.naming:617 [com.alibaba.nacos.client.naming.updater] - [NA] failed to request
+java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:862) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:859) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1604) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 11:06:50,367 [,,,] ERROR com.alibaba.nacos.client.naming:617 [com.alibaba.nacos.client.naming.updater] - [NA] failed to request
+java.net.SocketException: Unexpected end of file from server
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:862) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:859) ~[?:?]
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:689) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1604) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 11:12:09,454 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-9] - 用户名:zhangsan客户端：client1
+2023-06-28 11:12:16,072 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-9] - 用户id:3客户端：client1
+2023-06-28 11:13:24,598 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-10] - 用户名:zhangsan客户端：client1
+2023-06-28 11:14:15,286 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s992ms842µs200ns).
+2023-06-28 11:16:53,919 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m814ms787µs500ns).
+2023-06-28 11:19:00,180 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s626ms374µs500ns).
+2023-06-28 11:19:54,047 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s500ms948µs500ns).
+2023-06-28 11:22:26,090 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m32s41ms559µs900ns).
+2023-06-28 11:23:16,350 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s253ms627µs500ns).
+2023-06-28 11:24:07,656 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s581ms950µs700ns).
+2023-06-28 11:27:59,128 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-10] - Handling error: InternalAuthenticationServiceException, stream is closed reading POST http://silence-user/user/getUserByUserName?username=zhangsan
+2023-06-28 14:36:41,281 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-2] - 用户名:zhangsan客户端：client1
+2023-06-28 14:36:43,528 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-2] - 用户id:3客户端：client1

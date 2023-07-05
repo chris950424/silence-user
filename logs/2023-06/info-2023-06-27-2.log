@@ -1,0 +1,103 @@
+2023-06-27 11:01:57,972 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 11:01:58,341 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user] & group[dev]
+2023-06-27 11:01:58,351 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user.yaml] & group[dev]
+2023-06-27 11:01:58,361 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user-dev.yaml] & group[dev]
+2023-06-27 11:01:58,362 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-user-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-user.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-user,dev'}]
+2023-06-27 11:01:58,381 [,,,] INFO  com.silence.UserApplication:664 [main] - The following profiles are active: dev
+2023-06-27 11:01:59,173 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=99da31bc-2554-3137-bf47-d59c6c32479a
+2023-06-27 11:01:59,329 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5e9bf744' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:01:59,337 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:01:59,541 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 8087 (http)
+2023-06-27 11:01:59,547 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-8087"]
+2023-06-27 11:01:59,548 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-27 11:01:59,548 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-27 11:01:59,634 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-27 11:01:59,634 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1243 ms
+2023-06-27 11:02:00,092 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [main] - HikariPool-1 - Starting...
+2023-06-27 11:02:00,094 [,,,] WARN  com.zaxxer.hikari.util.DriverDataSource:70 [main] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-06-27 11:02:01,229 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [main] - HikariPool-1 - Start completed.
+2023-06-27 11:02:01,330 [,,,] INFO  com.silence.user.infrastructure.util.uid.impl.DisposableWorkerIdAssigner:49 [main] - Add worker node:com.silence.user.infrastructure.util.uid.entity.WorkerNodePo@1a8e44fe
+2023-06-27 11:02:01,331 [,,,] INFO  com.silence.user.infrastructure.util.uid.impl.DefaultUidGenerator:65 [main] - Initialized bits(1, 28, 22, 13) for workerID:906
+2023-06-27 11:02:01,561 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-27 11:02:01,737 [,,,] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105 [main] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-06-27 11:02:01,846 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:02:02,003 [,,,] INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86 [main] - 
+
+Using generated security password: 2b19b441-b35e-4750-88bf-7bf4c7f76171
+
+2023-06-27 11:02:02,174 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ecfff32, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bed5828, org.springframework.security.web.header.HeaderWriterFilter@51eafec0, org.springframework.security.web.authentication.logout.LogoutFilter@183a84f4, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7841c990, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32ae11c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6920fa35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c65f2e1, org.springframework.security.web.session.SessionManagementFilter@50aa9a91, org.springframework.security.web.access.ExceptionTranslationFilter@3083e6ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d84ab90]
+2023-06-27 11:02:02,388 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 11:02:02,560 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-8087"]
+2023-06-27 11:02:02,750 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 8087 (http) with context path ''
+2023-06-27 11:02:02,766 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-user 192.168.8.3:8087 register finished
+2023-06-27 11:02:02,826 [,,,] INFO  com.silence.UserApplication:61 [main] - Started UserApplication in 5.368 seconds (JVM running for 6.479)
+2023-06-27 11:11:35,796 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 11:11:35,796 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 11:11:35,833 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 11:11:35,856 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 11:11:36,277 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:11:36,336 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 11:11:36,348 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 11:11:45,421 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 11:11:45,422 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 11:11:45,427 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 11:11:45,428 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-27 11:11:45,440 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-27 11:11:45,510 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-27 11:21:38,333 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 11:21:38,679 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user] & group[dev]
+2023-06-27 11:21:38,686 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user.yaml] & group[dev]
+2023-06-27 11:21:38,693 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-user-dev.yaml] & group[dev]
+2023-06-27 11:21:38,693 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-user-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-user.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-user,dev'}]
+2023-06-27 11:21:38,712 [,,,] INFO  com.silence.UserApplication:664 [main] - The following profiles are active: dev
+2023-06-27 11:21:39,314 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=99da31bc-2554-3137-bf47-d59c6c32479a
+2023-06-27 11:21:39,464 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@693f2213' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:21:39,471 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:21:39,684 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 8087 (http)
+2023-06-27 11:21:39,691 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-8087"]
+2023-06-27 11:21:39,691 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-27 11:21:39,691 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-27 11:21:39,772 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-27 11:21:39,772 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1050 ms
+2023-06-27 11:21:40,207 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [main] - HikariPool-1 - Starting...
+2023-06-27 11:21:40,209 [,,,] WARN  com.zaxxer.hikari.util.DriverDataSource:70 [main] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-06-27 11:21:40,669 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [main] - HikariPool-1 - Start completed.
+2023-06-27 11:21:40,712 [,,,] INFO  com.silence.user.infrastructure.util.uid.impl.DisposableWorkerIdAssigner:49 [main] - Add worker node:com.silence.user.infrastructure.util.uid.entity.WorkerNodePo@5790cbcb
+2023-06-27 11:21:40,713 [,,,] INFO  com.silence.user.infrastructure.util.uid.impl.DefaultUidGenerator:65 [main] - Initialized bits(1, 28, 22, 13) for workerID:907
+2023-06-27 11:21:40,938 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-27 11:21:41,094 [,,,] WARN  org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:105 [main] - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-06-27 11:21:41,205 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:21:41,354 [,,,] INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration:86 [main] - 
+
+Using generated security password: ee073100-630c-4e81-93fa-69f46cfe24a3
+
+2023-06-27 11:21:41,541 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dc2c13c, org.springframework.security.web.context.SecurityContextPersistenceFilter@32ae11c9, org.springframework.security.web.header.HeaderWriterFilter@5bfdabf3, org.springframework.security.web.authentication.logout.LogoutFilter@4e553d60, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@e5f05f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7054c068, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74a991cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@579ee82, org.springframework.security.web.session.SessionManagementFilter@75b4db22, org.springframework.security.web.access.ExceptionTranslationFilter@1a48a582, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@531b1778]
+2023-06-27 11:21:41,732 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 11:21:41,892 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-8087"]
+2023-06-27 11:21:41,903 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 8087 (http) with context path ''
+2023-06-27 11:21:41,914 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-user 192.168.8.3:8087 register finished
+2023-06-27 11:21:41,969 [,,,] INFO  com.silence.UserApplication:61 [main] - Started UserApplication in 4.064 seconds (JVM running for 4.91)
+2023-06-27 11:43:53,584 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-8087-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-27 11:43:53,584 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-8087-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-27 11:43:53,585 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-8087-exec-1] - Completed initialization in 1 ms
+2023-06-27 11:43:53,618 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-1] - 用户名:zhangsan
+2023-06-27 11:51:16,090 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-4] - 用户名:zhangsan
+2023-06-27 11:51:32,653 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-6] - 用户名:zhangsan
+2023-06-27 11:51:59,732 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-8] - 用户名:zhangsan
+2023-06-27 11:52:36,735 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-10] - 用户名:zhangsan
+2023-06-27 11:59:03,929 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-3] - 用户名:zhangsan
+2023-06-27 12:01:14,708 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-6] - 用户名:zhangsan
+2023-06-27 12:02:45,021 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-9] - 用户名:zhangsan
+2023-06-27 12:23:43,043 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-2] - 用户名:zhangsan
+2023-06-27 12:30:00,286 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-5] - 用户名:zhangsan
+2023-06-27 14:26:51,746 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-8] - 用户名:zhangsan
+2023-06-27 15:19:51,171 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-1] - 用户名:zhangsan
+2023-06-27 16:14:03,255 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-4] - 用户名:zhangsan
+2023-06-27 16:28:14,088 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-7] - 用户名:zhangsan
+2023-06-27 16:49:20,742 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-10] - 用户名:zhangsan
+2023-06-27 16:49:59,507 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-2] - 用户名:zhangsan
+2023-06-27 16:50:27,702 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-4] - 用户名:zhangsan
+2023-06-27 16:53:59,046 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-8] - 用户名:zhangsan
+2023-06-27 17:24:11,653 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-1] - 用户名:zhangsan
+2023-06-27 17:34:21,967 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-4] - 用户名:zhangsan
+2023-06-27 17:42:06,410 [,,,] INFO  com.silence.user.application.UserApplicationService:43 [http-nio-8087-exec-7] - 用户名:zhangsan

@@ -1,4 +1,4 @@
-package com.silence.auth.infrastructure.config;
+package com.silence.user.infrastructure.config;
 
 import brave.baggage.BaggageFields;
 import brave.baggage.CorrelationScopeConfig;
@@ -27,4 +27,3 @@ public class SleuthConfiguration {
         return builder -> builder.add(CorrelationScopeConfig.SingleCorrelationField.create(BaggageFields.PARENT_ID));
     }
 }
-

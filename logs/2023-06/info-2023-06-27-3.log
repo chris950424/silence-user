@@ -1,0 +1,442 @@
+2023-06-27 10:55:48,420 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 10:55:48,989 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 10:55:48,999 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 10:55:49,009 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 10:55:49,010 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 10:55:49,033 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 10:55:50,145 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 10:55:50,461 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 10:55:50,462 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 10:55:50,465 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 10:55:51,042 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 7ef11792-627f-4a93-b592-0e7c3414c326
+
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 10:55:51,163 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 10:55:51,164 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 10:55:51,165 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 10:55:51,467 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 10:55:51,692 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 10:55:52,090 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 10:55:52,207 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 10:55:52,224 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 8.075 seconds (JVM running for 18.279)
+2023-06-27 11:11:19,357 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 11:11:19,357 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 11:11:19,391 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 11:11:19,407 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 11:11:19,536 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:11:19,573 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 11:11:19,589 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 11:11:27,221 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 11:11:27,222 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 11:11:27,226 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 11:11:27,271 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 11:17:39,589 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 11:17:40,184 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 11:17:40,191 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 11:17:40,198 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 11:17:40,199 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 11:17:40,220 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 11:17:40,972 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 11:17:41,132 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:17:41,133 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:17:41,135 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:17:41,700 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: bd886954-2d68-4f65-a4ff-ad2b5879d738
+
+2023-06-27 11:17:41,806 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 11:17:41,807 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 11:17:41,807 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 11:17:41,807 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 11:17:41,807 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 11:17:41,807 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 11:17:41,808 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 11:17:42,102 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:17:42,263 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 11:17:43,925 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 11:17:44,034 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 11:17:44,051 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 5.22 seconds (JVM running for 8.914)
+2023-06-27 11:41:03,115 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 11:41:03 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 11:51:15,947 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-3] - time:Tue Jun 27 11:51:15 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 11:51:32,519 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-4] - time:Tue Jun 27 11:51:32 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 11:51:59,556 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-4] - time:Tue Jun 27 11:51:59 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 11:52:36,600 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-3] - time:Tue Jun 27 11:52:36 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 11:52:49,004 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 11:52:49,004 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 11:52:49,005 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 11:52:49,006 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 11:52:49,009 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:52:49,014 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 11:52:49,022 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 11:52:58,140 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 11:52:58,141 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 11:52:58,143 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 11:52:58,174 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 11:53:02,341 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 11:53:02,741 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 11:53:02,748 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 11:53:02,754 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 11:53:02,755 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 11:53:02,776 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 11:53:03,266 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 11:53:03,391 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:53:03,392 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:53:03,394 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 11:53:03,860 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 0f06d72f-0c64-4257-a8ae-5d6921773a26
+
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 11:53:03,953 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 11:53:03,954 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 11:53:04,255 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 11:53:04,396 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 11:53:04,662 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 11:53:04,758 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 11:53:04,772 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 2.858 seconds (JVM running for 3.773)
+2023-06-27 11:59:02,351 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 11:59:02 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 12:01:14,555 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-3] - time:Tue Jun 27 12:01:13 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 12:02:44,855 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-4] - time:Tue Jun 27 12:02:43 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 12:02:50,803 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 12:02:50,803 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 12:02:50,804 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 12:02:50,805 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 12:02:50,808 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 12:02:50,812 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 12:02:50,818 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 12:02:57,917 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 12:02:57,918 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 12:02:57,920 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 12:02:57,954 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 12:03:01,092 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 12:03:01,478 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 12:03:01,486 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 12:03:01,493 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 12:03:01,494 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 12:03:01,514 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 12:03:02,033 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 12:03:02,182 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 12:03:02,184 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 12:03:02,187 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 12:03:02,884 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 4743fd02-9949-4c6d-8387-48c4ba5b52de
+
+2023-06-27 12:03:03,009 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 12:03:03,009 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 12:03:03,010 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 12:03:03,011 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 12:03:03,011 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 12:03:03,011 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 12:03:03,011 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 12:03:03,375 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 12:03:03,538 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 12:03:03,842 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 12:03:03,948 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 12:03:03,964 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 3.353 seconds (JVM running for 4.351)
+2023-06-27 12:19:28,988 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 12:19:28 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 12:29:10,490 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-3] - time:Tue Jun 27 12:29:10 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 14:15:22,982 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-5] - time:Tue Jun 27 14:15:22 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 14:45:44,473 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 14:45:44,474 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 14:45:44,473 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 14:45:44,477 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 14:45:44,487 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 14:45:44,496 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 14:45:44,506 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 14:45:49,294 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 14:45:49,294 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 14:45:49,296 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 14:45:49,311 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 14:45:54,368 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 14:45:54,791 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 14:45:54,803 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 14:45:54,814 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 14:45:54,815 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 14:45:54,837 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 14:45:55,418 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 14:45:55,562 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 14:45:55,563 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 14:45:55,565 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 14:45:56,108 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 716afa53-e8d0-4b29-a9a8-2f22c57eb679
+
+2023-06-27 14:45:56,304 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 14:45:56,304 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 14:45:56,304 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 14:45:56,304 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 14:45:56,305 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 14:45:56,306 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 14:45:56,306 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 14:56:11,466 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 14:56:11,622 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 14:56:12,022 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 14:56:12,126 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 14:56:12,157 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 618.315 seconds (JVM running for 619.524)
+2023-06-27 15:05:49,984 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 15:05:49,984 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 15:05:49,985 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 15:05:49,985 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 15:05:49,992 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:05:49,997 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 15:05:50,007 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 15:05:57,168 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 15:05:57,169 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 15:05:57,171 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 15:05:57,199 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 15:06:03,102 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 15:06:03,468 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 15:06:03,475 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 15:06:03,481 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 15:06:03,482 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 15:06:03,502 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 15:06:04,016 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 15:06:04,140 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:06:04,142 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:06:04,143 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:06:04,654 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 56ad9322-cab5-415e-ba37-7f7d12a7ff91
+
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 15:06:04,748 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 15:06:04,749 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 15:06:04,749 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 15:06:04,749 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 15:06:04,758 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 15:06:04,759 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 15:06:04,759 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 15:06:04,759 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 15:17:07,538 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:17:07,692 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 15:17:18,181 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 15:17:18,280 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 15:17:20,632 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 678.029 seconds (JVM running for 679.095)
+2023-06-27 15:19:50,766 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 15:19:50,766 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 15:19:50,766 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 15:19:50,767 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 15:19:50,793 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 15:19:50 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 15:19:51,464 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:19:51,467 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 15:19:51,474 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 15:20:00,551 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 15:20:00,552 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 15:20:00,554 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 15:20:00,592 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 15:20:04,584 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 15:20:04,971 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 15:20:04,981 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 15:20:04,990 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 15:20:04,991 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 15:20:05,011 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 15:20:05,488 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 15:20:05,627 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:20:05,628 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:20:05,629 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:20:06,088 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 0087621d-ebe5-4bc1-af80-5a0fb5a5244f
+
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 15:20:06,184 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 15:20:06,185 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 15:31:37,828 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:31:37,986 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 15:31:39,923 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 15:31:40,024 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 15:31:41,257 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 697.116 seconds (JVM running for 697.964)
+2023-06-27 15:31:52,980 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 15:31:52,980 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 15:31:52,981 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 15:31:52,981 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 15:31:52,987 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:31:52,991 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 15:31:53,001 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 15:32:01,138 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 15:32:01,140 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 15:32:01,142 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 15:32:01,169 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 15:32:04,215 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 15:32:04,609 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 15:32:04,619 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 15:32:04,627 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 15:32:04,628 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 15:32:04,650 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 15:32:05,151 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 15:32:05,358 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:32:05,360 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:32:05,361 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:32:05,869 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 272731b6-85fb-4e0a-b255-e512fd893919
+
+2023-06-27 15:32:05,966 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 15:32:05,967 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 15:32:05,968 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 15:32:05,968 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 15:32:05,968 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 15:32:05,968 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 15:32:05,968 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 15:40:19,272 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:40:19,437 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 15:40:51,204 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 15:40:51,304 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 15:40:52,452 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 528.708 seconds (JVM running for 529.666)
+2023-06-27 15:59:21,065 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 15:59:21,065 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 15:59:21,066 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 15:59:21,066 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 15:59:21,072 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 15:59:21,077 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 15:59:21,084 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 15:59:27,530 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 15:59:27,531 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 15:59:27,531 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 15:59:27,540 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 15:59:31,628 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 15:59:32,018 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 15:59:32,025 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 15:59:32,032 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 15:59:32,033 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 15:59:32,054 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 15:59:32,537 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 15:59:32,663 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:59:32,664 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:59:32,666 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 15:59:33,128 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 72f26699-75a6-42f8-a257-25c03957f57a
+
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 15:59:33,222 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 15:59:33,223 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 15:59:33,223 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 15:59:33,223 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 15:59:33,223 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 15:59:33,223 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 16:03:15,998 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 16:03:16,190 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 16:03:16,589 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 16:03:16,701 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 16:03:16,733 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 225.555 seconds (JVM running for 226.493)
+2023-06-27 16:14:02,750 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 16:14:02 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:14:02,771 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-27 16:14:02,771 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-27 16:14:02,772 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-27 16:14:02,772 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-27 16:14:03,530 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 16:14:03,534 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-27 16:14:03,544 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-27 16:14:12,634 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-27 16:14:12,635 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-27 16:14:12,638 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-27 16:14:12,675 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:267 [SpringContextShutdownHook] - Invocation of destroy method failed on bean with name 'reactorServerResourceFactory': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'braveTracer': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2023-06-27 16:14:17,884 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-27 16:14:18,239 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway] & group[dev]
+2023-06-27 16:14:18,245 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway.yaml] & group[dev]
+2023-06-27 16:14:18,251 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-gateway-dev.yaml] & group[dev]
+2023-06-27 16:14:18,252 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-gateway,dev'}]
+2023-06-27 16:14:18,271 [,,,] INFO  com.silence.GatewayApplication:664 [main] - The following profiles are active: dev
+2023-06-27 16:14:18,707 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=baba635e-2575-32e8-b1f8-c2ce01e69ee1
+2023-06-27 16:14:18,809 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 16:14:18,811 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 16:14:18,812 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-27 16:14:19,263 [,,,] INFO  org.springframework.boot.autoconfigure.security.reactive.ReactiveUserDetailsServiceAutoConfiguration:88 [main] - 
+
+Using generated security password: 22359d24-3dee-4312-9bf0-e466989d8efb
+
+2023-06-27 16:14:19,335 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [After]
+2023-06-27 16:14:19,335 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Before]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Between]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Cookie]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Header]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Host]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Method]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Path]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Query]
+2023-06-27 16:14:19,336 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [ReadBody]
+2023-06-27 16:14:19,337 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-27 16:14:19,337 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [Weight]
+2023-06-27 16:14:19,337 [,,,] INFO  org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator:88 [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-27 16:14:19,549 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-27 16:14:19,690 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-27 16:14:19,914 [,,,] INFO  org.springframework.boot.web.embedded.netty.NettyWebServer:111 [main] - Netty started on port 9071
+2023-06-27 16:14:20,011 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-gateway 192.168.8.3:9071 register finished
+2023-06-27 16:14:20,026 [,,,] INFO  com.silence.GatewayApplication:61 [main] - Started GatewayApplication in 2.59 seconds (JVM running for 3.277)
+2023-06-27 16:15:20,410 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-1] - time:Tue Jun 27 16:15:20 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:35:04,791 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-3] - time:Tue Jun 27 16:35:04 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:49:34,509 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-5] - time:Tue Jun 27 16:49:34 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:49:34,511 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-6] - No servers available for service: silence-auth
+2023-06-27 16:49:54,429 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-6] - time:Tue Jun 27 16:49:54 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:50:15,860 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-5] - time:Tue Jun 27 16:50:15 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:53:41,837 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-7] - time:Tue Jun 27 16:53:41 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 16:57:01,915 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-9] - time:Tue Jun 27 16:57:01 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 17:25:04,335 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-11] - time:Tue Jun 27 17:25:04 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-27 17:39:20,778 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-13] - time:Tue Jun 27 17:39:20 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello

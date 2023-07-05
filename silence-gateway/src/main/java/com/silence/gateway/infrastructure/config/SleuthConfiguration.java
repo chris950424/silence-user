@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @author shanhy
  * @date 2021/4/7 13:37
  */
-//@Configuration
+@Configuration
 public class SleuthConfiguration {
 
     /**
@@ -27,4 +27,3 @@ public class SleuthConfiguration {
         return builder -> builder.add(CorrelationScopeConfig.SingleCorrelationField.create(BaggageFields.PARENT_ID));
     }
 }
-

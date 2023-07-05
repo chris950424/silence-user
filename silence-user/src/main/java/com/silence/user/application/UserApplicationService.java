@@ -6,6 +6,8 @@ import com.silence.user.domain.entity.User;
 import com.silence.user.domain.service.UserService;
 import com.silence.user.infrastructure.base.ApiResponse;
 import com.silence.user.ui.entity.command.AddUserCommend;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -20,6 +22,8 @@ import java.util.List;
  */
 @Service
 public class UserApplicationService {
+    private static final Log log = LogFactory.getLog(UserApplicationService.class);
+
     @Resource
     private UserService userService;
 
@@ -36,6 +40,7 @@ public class UserApplicationService {
     }
 
     public UserDto getUserByUserName(String username) {
+        log.info("用户名:" + username , null);
         return  UserAssemble.INSTANCE.userToUserDto(userService.getUserByUsername(username));
     }
 }

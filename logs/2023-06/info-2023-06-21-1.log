@@ -1,0 +1,1121 @@
+2023-06-21 14:50:35,494 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 14:50:35,921 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 14:50:35,927 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 14:50:35,933 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 14:50:35,934 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 14:50:35,954 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 14:50:36,760 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=6be992cb-7d11-3134-ad04-aad36140f08d
+2023-06-21 14:50:36,919 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2eb1c615' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 14:50:36,927 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 14:50:37,126 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 14:50:37,132 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 14:50:37,132 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 14:50:37,133 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 14:50:37,208 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:50:37,208 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1245 ms
+2023-06-21 14:50:37,895 [,,,] WARN  org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration:146 [main] - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2023-06-21 14:50:38,547 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 14:50:38,791 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 14:50:39,051 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b552b13, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b4ba2d9, org.springframework.security.web.header.HeaderWriterFilter@cbc3bf3, org.springframework.security.web.authentication.logout.LogoutFilter@5d035ab6, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@254d8ef6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f13e0a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56adbb07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45c28c49, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@524dd373, org.springframework.security.web.session.SessionManagementFilter@3085befb, org.springframework.security.web.access.ExceptionTranslationFilter@22ed2886, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12478b4e]
+2023-06-21 14:50:39,062 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1afabf06, org.springframework.security.web.context.SecurityContextPersistenceFilter@31cddb11, org.springframework.security.web.header.HeaderWriterFilter@4a34de5e, org.springframework.security.web.authentication.logout.LogoutFilter@78a34c47, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1db9c2cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@510bd87a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d213a2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33060020, org.springframework.security.web.session.SessionManagementFilter@48da5106, org.springframework.security.web.access.ExceptionTranslationFilter@9fd3b61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58fbfefb]
+2023-06-21 14:50:39,277 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 14:50:39,426 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 14:50:39,439 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 14:50:39,448 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 14:50:39,509 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 4.465 seconds (JVM running for 5.139)
+2023-06-21 14:53:56,187 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 14:53:56,187 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 14:53:56,188 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-21 14:53:56,279 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 14:53:59,436 [,,,] ERROR com.zaxxer.hikari.pool.HikariPool:593 [http-nio-9086-exec-1] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.attemptAuthentication(ClientCredentialsTokenEndpointFilter.java:123) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) [spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) [spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 78 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 78 more
+2023-06-21 14:53:59,469 [,,,] ERROR org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter:235 [http-nio-9086-exec-1] - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.attemptAuthentication(ClientCredentialsTokenEndpointFilter.java:123) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) [spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) [spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+2023-06-21 14:53:59,509 [,,,] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175 [http-nio-9086-exec-1] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: Invalid characters (CR/LF) in header WWW-Authenticate
+	at org.springframework.util.Assert.isTrue(Assert.java:139) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.firewall.FirewalledResponse.validateCrlf(FirewalledResponse.java:76) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.firewall.FirewalledResponse.addHeader(FirewalledResponse.java:59) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at javax.servlet.http.HttpServletResponseWrapper.addHeader(HttpServletResponseWrapper.java:174) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.addHeader(OnCommittedResponseWrapper.java:64) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.http.server.ServletServerHttpResponse.lambda$writeHeaders$0(ServletServerHttpResponse.java:117) ~[spring-web-5.3.3.jar:5.3.3]
+	at java.util.Map.forEach(Map.java:661) ~[?:?]
+	at org.springframework.http.server.ServletServerHttpResponse.writeHeaders(ServletServerHttpResponse.java:115) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:96) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:313) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.writeInternal(AbstractGenericHttpMessageConverter.java:113) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.writeWithMessageConverters(DefaultOAuth2ExceptionRenderer.java:95) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.handleHttpEntityResponse(DefaultOAuth2ExceptionRenderer.java:74) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.doHandle(AbstractOAuth2SecurityExceptionHandler.java:60) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.commence(OAuth2AuthenticationEntryPoint.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter$1.onAuthenticationFailure(ClientCredentialsTokenEndpointFilter.java:82) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.unsuccessfulAuthentication(AbstractAuthenticationProcessingFilter.java:342) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:236) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) ~[spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) ~[spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-21 14:54:01,029 [,,,] WARN  zipkin2.reporter.AsyncReporter$BoundedAsyncReporter:310 [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2023-06-21 14:54:01,029 [,,,] WARN  zipkin2.reporter.AsyncReporter$BoundedAsyncReporter:317 [AsyncReporter{RestTemplateSender{http://localhost:9411/api/v2/spans}}] - Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:784) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.cloud.sleuth.zipkin2.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateWrapper.java:69) ~[spring-cloud-sleuth-zipkin-3.0.1.jar:3.0.1]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:659) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender.post(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:150) ~[spring-cloud-sleuth-zipkin-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.zipkin2.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:140) ~[spring-cloud-sleuth-zipkin-3.0.1.jar:3.0.1]
+	at zipkin2.Call$Base.execute(Call.java:391) ~[zipkin-2.23.0.jar:?]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) [zipkin-reporter-2.16.1.jar:?]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) [zipkin-reporter-2.16.1.jar:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:177) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:474) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:569) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:341) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:362) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1242) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1181) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1075) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1009) ~[?:?]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:775) ~[spring-web-5.3.3.jar:5.3.3]
+	... 9 more
+2023-06-21 14:55:27,325 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-4] - HikariPool-1 - Starting...
+2023-06-21 14:55:30,407 [,,,] ERROR com.zaxxer.hikari.pool.HikariPool:593 [http-nio-9086-exec-4] - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) [HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) [HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) [spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) [spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.attemptAuthentication(ClientCredentialsTokenEndpointFilter.java:123) [spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) [spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) [spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 78 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	... 78 more
+2023-06-21 14:55:30,412 [,,,] ERROR org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter:235 [http-nio-9086-exec-4] - An internal error occurred while trying to authenticate the user.
+org.springframework.security.authentication.InternalAuthenticationServiceException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:108) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:133) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.2.jar:5.4.2]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter.attemptAuthentication(ClientCredentialsTokenEndpointFilter.java:123) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:222) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) [spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) [spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) [spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.waitForConnect(Native Method) ~[?:?]
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:744) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:757) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:886) ~[spring-jdbc-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.client.JdbcClientDetailsService.loadClientByClientId(JdbcClientDetailsService.java:119) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService.loadUserByUsername(ClientDetailsUserDetailsService.java:47) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:93) ~[spring-security-core-5.4.2.jar:5.4.2]
+	... 57 more
+2023-06-21 14:55:30,419 [,,,] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175 [http-nio-9086-exec-4] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: Invalid characters (CR/LF) in header WWW-Authenticate
+	at org.springframework.util.Assert.isTrue(Assert.java:139) ~[spring-core-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.firewall.FirewalledResponse.validateCrlf(FirewalledResponse.java:76) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.firewall.FirewalledResponse.addHeader(FirewalledResponse.java:59) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at javax.servlet.http.HttpServletResponseWrapper.addHeader(HttpServletResponseWrapper.java:174) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.security.web.util.OnCommittedResponseWrapper.addHeader(OnCommittedResponseWrapper.java:64) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.http.server.ServletServerHttpResponse.lambda$writeHeaders$0(ServletServerHttpResponse.java:117) ~[spring-web-5.3.3.jar:5.3.3]
+	at java.util.Map.forEach(Map.java:661) ~[?:?]
+	at org.springframework.http.server.ServletServerHttpResponse.writeHeaders(ServletServerHttpResponse.java:115) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:96) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:313) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.writeInternal(AbstractGenericHttpMessageConverter.java:113) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.writeWithMessageConverters(DefaultOAuth2ExceptionRenderer.java:95) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.DefaultOAuth2ExceptionRenderer.handleHttpEntityResponse(DefaultOAuth2ExceptionRenderer.java:74) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.AbstractOAuth2SecurityExceptionHandler.doHandle(AbstractOAuth2SecurityExceptionHandler.java:60) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint.commence(OAuth2AuthenticationEntryPoint.java:53) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter$1.onAuthenticationFailure(ClientCredentialsTokenEndpointFilter.java:82) ~[spring-security-oauth2-2.3.4.RELEASE.jar:?]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.unsuccessfulAuthentication(AbstractAuthenticationProcessingFilter.java:342) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:236) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.2.jar:5.4.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.cloud.sleuth.instrument.web.servlet.TracingFilter.doFilter(TracingFilter.java:89) ~[spring-cloud-sleuth-instrumentation-3.0.1.jar:3.0.1]
+	at org.springframework.cloud.sleuth.autoconfig.instrument.web.LazyTracingFilter.doFilter(TraceWebServletConfiguration.java:121) ~[spring-cloud-sleuth-autoconfigure-3.0.1.jar:3.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-21 14:57:52,033 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 14:57:52,033 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 14:57:52,034 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 14:57:52,035 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 14:57:52,090 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 14:57:52,093 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 14:57:52,102 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 14:58:01,174 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 14:58:01,175 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 14:58:01,175 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 14:58:01,176 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 14:58:07,508 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 14:58:07,911 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 14:58:07,921 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 14:58:07,930 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 14:58:07,931 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 14:58:07,955 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 14:58:08,525 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=0acbc596-5d45-3725-aca6-0ab232cb6813
+2023-06-21 14:58:08,678 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@783b3aa0' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 14:58:08,686 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 14:58:08,898 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 14:58:08,904 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 14:58:08,905 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 14:58:08,905 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 14:58:08,976 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 14:58:08,977 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1007 ms
+2023-06-21 14:58:09,724 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 14:58:09,959 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 14:58:10,170 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@644f6e89, org.springframework.security.web.context.SecurityContextPersistenceFilter@70273633, org.springframework.security.web.header.HeaderWriterFilter@759b05d1, org.springframework.security.web.authentication.logout.LogoutFilter@3dad8bde, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@7aef8000, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c14bbab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44ec4a38, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4866a755, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9ae0794, org.springframework.security.web.session.SessionManagementFilter@458b4487, org.springframework.security.web.access.ExceptionTranslationFilter@712e4b18, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e5b3642]
+2023-06-21 14:58:10,180 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@237c8718, org.springframework.security.web.context.SecurityContextPersistenceFilter@4840ec68, org.springframework.security.web.header.HeaderWriterFilter@c6a3f47, org.springframework.security.web.authentication.logout.LogoutFilter@43dddfdd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5773f83d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cc3a7f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@210e2f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@325e03b, org.springframework.security.web.session.SessionManagementFilter@15a0f9, org.springframework.security.web.access.ExceptionTranslationFilter@571c7572, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a238a8e]
+2023-06-21 14:58:10,351 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 14:58:10,489 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 14:58:10,501 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 14:58:10,513 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 14:58:10,566 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 3.445 seconds (JVM running for 4.209)
+2023-06-21 14:58:27,319 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 14:58:27,319 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 14:58:27,320 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-21 14:58:27,431 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 14:58:29,669 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 14:58:29,935 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 14:58:30,010 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-1] - No servers available for service: silence-user
+2023-06-21 14:58:30,011 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-1] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 14:58:30,018 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-1] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:01:44,273 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-21 15:01:44,277 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-2] - No servers available for service: silence-user
+2023-06-21 15:01:44,278 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-3] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 15:01:44,279 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-3] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:02:01,515 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 15:02:01,515 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 15:02:01,516 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 15:02:01,516 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 15:02:01,559 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:02:01,561 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 15:02:01,569 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 15:02:10,668 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 15:02:10,668 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 15:02:10,668 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 15:02:10,669 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:02:10,670 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 15:02:10,679 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-21 15:02:14,925 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 15:02:15,452 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 15:02:15,459 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 15:02:15,467 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 15:02:15,468 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 15:02:15,491 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 15:02:16,184 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=0acbc596-5d45-3725-aca6-0ab232cb6813
+2023-06-21 15:02:16,471 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@27358a19' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:02:16,480 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:02:16,700 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 15:02:16,708 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:02:16,709 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 15:02:16,709 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 15:02:16,775 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 15:02:16,775 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1274 ms
+2023-06-21 15:02:27,418 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:02:27,655 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:02:27,903 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a56f608, org.springframework.security.web.context.SecurityContextPersistenceFilter@659ac28c, org.springframework.security.web.header.HeaderWriterFilter@37fd496a, org.springframework.security.web.authentication.logout.LogoutFilter@18ffc008, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@20923380, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@576323ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@820b78a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b063695, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2809e38a, org.springframework.security.web.session.SessionManagementFilter@5c46a957, org.springframework.security.web.access.ExceptionTranslationFilter@75c3584e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a23b9d1]
+2023-06-21 15:02:27,913 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4353db40, org.springframework.security.web.context.SecurityContextPersistenceFilter@68a97fc1, org.springframework.security.web.header.HeaderWriterFilter@69c51fdb, org.springframework.security.web.authentication.logout.LogoutFilter@65f3f9e2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66e434e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@227fc322, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63053b71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56887c8f, org.springframework.security.web.session.SessionManagementFilter@4aadf144, org.springframework.security.web.access.ExceptionTranslationFilter@5d32f5db, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d01f2e5]
+2023-06-21 15:02:28,084 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 15:02:28,241 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:02:28,254 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 15:02:28,265 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 15:02:28,351 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 14.006 seconds (JVM running for 15.941)
+2023-06-21 15:03:08,854 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:03:08,855 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:03:08,857 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-21 15:03:08,984 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 15:03:09,558 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 15:03:19,943 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:03:33,568 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-1] - No servers available for service: silence-user
+2023-06-21 15:03:33,573 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-1] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 15:03:33,663 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-1] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:06:04,887 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-21 15:06:04,892 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-2] - No servers available for service: silence-user
+2023-06-21 15:06:04,892 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-3] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 15:06:04,893 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-3] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:06:23,422 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-4] - 用户名:zhangsan客户端：client1
+2023-06-21 15:06:23,428 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-2] - No servers available for service: silence-user
+2023-06-21 15:06:23,429 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-4] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 15:06:23,430 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-4] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:08:55,376 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-6] - 用户名:zhangsan客户端：client1
+2023-06-21 15:08:57,653 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-6] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:14:19,420 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-8] - 用户名:zhangsan客户端：client1
+2023-06-21 15:14:19,537 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-8] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:17:19,088 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-10] - 用户名:zhangsan客户端：client1
+2023-06-21 15:17:19,228 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-10] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:17:35,389 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:17:35,400 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-1] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:19:08,186 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-21 15:19:08,274 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-3] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:20:38,789 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-5] - 用户名:zhangsan客户端：client1
+2023-06-21 15:21:19,212 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-5] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:22:00,399 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-6] - 用户名:zhangsan客户端：client1
+2023-06-21 15:23:42,152 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s197ms30µs700ns).
+2023-06-21 15:23:51,775 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-6] - Handling error: InternalAuthenticationServiceException, [401] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}]
+2023-06-21 15:31:41,339 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-8] - 用户名:zhangsan客户端：client1
+2023-06-21 15:31:41,429 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-8] - 用户id:3客户端：client1
+2023-06-21 15:32:36,830 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-9] - 用户名:zhangsan客户端：client1
+2023-06-21 15:32:36,866 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-9] - 用户id:3客户端：client1
+2023-06-21 15:35:50,109 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:35:50,114 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-10] - No servers available for service: silence-user
+2023-06-21 15:35:50,115 [,,,] WARN  org.springframework.cloud.openfeign.loadbalancer.FeignBlockingLoadBalancerClient:94 [http-nio-9086-exec-1] - Load balancer does not contain an instance for the service silence-user
+2023-06-21 15:35:50,117 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-1] - Handling error: InternalAuthenticationServiceException, [503] during [POST] to [http://silence-user/user/getUserByUserName?username=zhangsan] [UseApi#getUserByUserName(String)]: [Load balancer does not contain an instance for the service silence-user]
+2023-06-21 15:35:59,078 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-2] - 用户名:zhangsan客户端：client1
+2023-06-21 15:35:59,202 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-2] - 用户id:3客户端：client1
+2023-06-21 15:40:33,325 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-4] - 用户名:zhangsan客户端：client1
+2023-06-21 15:40:33,452 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-4] - 用户id:3客户端：client1
+2023-06-21 15:40:40,073 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 15:40:40,073 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 15:40:40,074 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 15:40:40,076 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 15:40:40,181 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:40:40,187 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 15:40:40,204 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 15:40:49,251 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 15:40:49,252 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 15:40:49,253 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 15:40:49,254 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:40:49,259 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 15:40:49,268 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-21 15:44:00,015 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 15:44:00,389 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 15:44:00,402 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 15:44:00,412 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 15:44:00,415 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 15:44:00,473 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 15:44:01,083 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=0acbc596-5d45-3725-aca6-0ab232cb6813
+2023-06-21 15:44:01,257 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@639cb788' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:44:01,265 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:44:01,470 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 15:44:01,476 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:44:01,477 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 15:44:01,477 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 15:44:01,558 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 15:44:01,558 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1067 ms
+2023-06-21 15:44:02,521 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:44:02,776 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:44:03,015 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1832b0f6, org.springframework.security.web.context.SecurityContextPersistenceFilter@b666366, org.springframework.security.web.header.HeaderWriterFilter@71ac5723, org.springframework.security.web.authentication.logout.LogoutFilter@76bdfc19, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@1aea759d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@493250cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23e297d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76c85485, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6693818c, org.springframework.security.web.session.SessionManagementFilter@6e466fdf, org.springframework.security.web.access.ExceptionTranslationFilter@238a7e3d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f12676]
+2023-06-21 15:44:03,025 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45b2d17b, org.springframework.security.web.context.SecurityContextPersistenceFilter@21f94fe3, org.springframework.security.web.header.HeaderWriterFilter@7e27b77a, org.springframework.security.web.authentication.logout.LogoutFilter@1771d6a5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d01b609, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52ab003b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1174e173, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5243d730, org.springframework.security.web.session.SessionManagementFilter@6a30f6b1, org.springframework.security.web.access.ExceptionTranslationFilter@7fb1820d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34588991]
+2023-06-21 15:44:03,210 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 15:44:03,360 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:44:03,374 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 15:44:03,386 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 15:44:03,455 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 3.927 seconds (JVM running for 4.769)
+2023-06-21 15:44:41,018 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:44:41,018 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:44:41,020 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 2 ms
+2023-06-21 15:44:41,111 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 15:44:41,384 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 15:44:41,616 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:44:41,843 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-21 15:45:05,807 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 15:45:05,807 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 15:45:05,807 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 15:45:05,807 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 15:45:05,853 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:45:05,854 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 15:45:05,862 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 15:45:14,650 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 15:45:14,651 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 15:45:14,652 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 15:45:14,654 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:45:14,659 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 15:45:14,689 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-21 15:45:18,852 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 15:45:19,221 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 15:45:19,228 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 15:45:19,235 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 15:45:19,236 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 15:45:19,261 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 15:45:19,827 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=ac8e4b01-9926-30f3-96f3-258ce3853189
+2023-06-21 15:45:19,996 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@362a561e' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:45:20,004 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:45:20,214 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 15:45:20,219 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:45:20,220 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 15:45:20,220 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 15:45:20,285 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 15:45:20,285 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1015 ms
+2023-06-21 15:45:21,135 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:45:21,378 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:45:21,643 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30a4a111, org.springframework.security.web.context.SecurityContextPersistenceFilter@56887c8f, org.springframework.security.web.header.HeaderWriterFilter@18c26588, org.springframework.security.web.authentication.logout.LogoutFilter@4a490518, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@28d97205, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e5f05f8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57abe94d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a1e38ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f6a6d46, org.springframework.security.web.session.SessionManagementFilter@3a7d6976, org.springframework.security.web.access.ExceptionTranslationFilter@63053b71, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7841c990]
+2023-06-21 15:45:21,654 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3113595e, org.springframework.security.web.context.SecurityContextPersistenceFilter@5857d723, org.springframework.security.web.header.HeaderWriterFilter@7bb3294c, org.springframework.security.web.authentication.logout.LogoutFilter@84e43fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@629cf53c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b518645, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294a3f2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@109188b4, org.springframework.security.web.session.SessionManagementFilter@f391e52, org.springframework.security.web.access.ExceptionTranslationFilter@71ac5723, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2adce412]
+2023-06-21 15:45:21,832 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 15:45:21,980 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:45:21,994 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 15:45:22,004 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 15:45:22,059 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 3.68 seconds (JVM running for 4.528)
+2023-06-21 15:45:27,825 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:45:27,826 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:45:27,827 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-21 15:45:27,922 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 15:45:28,210 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 15:45:28,442 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:45:28,566 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-21 15:50:49,016 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 15:50:49,016 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 15:50:49,016 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 15:50:49,017 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 15:50:49,062 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:50:49,064 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 15:50:49,072 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 15:50:57,185 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 15:50:57,186 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 15:50:57,186 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 15:50:57,187 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:50:57,188 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 15:50:57,196 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-21 15:51:10,075 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 15:51:10,505 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 15:51:10,515 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 15:51:10,523 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 15:51:10,524 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 15:51:10,557 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 15:51:11,267 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=ac8e4b01-9926-30f3-96f3-258ce3853189
+2023-06-21 15:51:11,443 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4601047' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:51:11,452 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 15:51:11,695 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 15:51:11,701 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:51:11,701 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 15:51:11,701 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 15:51:11,771 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 15:51:11,772 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1196 ms
+2023-06-21 15:51:12,633 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 15:51:12,877 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 15:51:13,147 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7054c068, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e7987b8, org.springframework.security.web.header.HeaderWriterFilter@3dc4ed6f, org.springframework.security.web.authentication.logout.LogoutFilter@3a0b6aff, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@594f508f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@294a12b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56d3af4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a2ffb0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48301bfe, org.springframework.security.web.session.SessionManagementFilter@72ea6fcb, org.springframework.security.web.access.ExceptionTranslationFilter@6870a76f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1164990a]
+2023-06-21 15:51:13,164 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25c06894, org.springframework.security.web.context.SecurityContextPersistenceFilter@28b7646, org.springframework.security.web.header.HeaderWriterFilter@1c512bb, org.springframework.security.web.authentication.logout.LogoutFilter@30a6984c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b827796, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19d0d1ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f26cd76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c2ae7d7, org.springframework.security.web.session.SessionManagementFilter@57d7c511, org.springframework.security.web.access.ExceptionTranslationFilter@17a5ae7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68b3de47]
+2023-06-21 15:51:13,339 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 15:51:13,486 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 15:51:13,515 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 15:51:13,527 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 15:51:13,581 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 4.043 seconds (JVM running for 4.972)
+2023-06-21 15:51:20,310 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 15:51:20,310 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 15:51:20,312 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 2 ms
+2023-06-21 15:51:20,404 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 15:51:20,676 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 15:51:20,901 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 15:51:21,099 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-21 15:53:48,608 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-21 15:54:52,186 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s225ms96µs800ns).
+2023-06-21 15:57:55,275 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s816ms927µs100ns).
+2023-06-21 15:59:36,307 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s343ms736µs400ns).
+2023-06-21 16:02:35,633 [,,,] WARN  com.zaxxer.hikari.pool.HikariPool:787 [HikariPool-1 housekeeper] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s96ms785µs300ns).
+2023-06-21 16:03:00,774 [,,,] WARN  org.springframework.security.oauth2.provider.endpoint.TokenEndpoint:169 [http-nio-9086-exec-3] - Handling error: InternalAuthenticationServiceException, stream is closed reading POST http://silence-user/user/getUserByUserName?username=zhangsan
+2023-06-21 16:11:23,259 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 16:11:23,259 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 16:11:23,259 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 16:11:23,262 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 16:11:23,319 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 16:11:23,322 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 16:11:23,333 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 16:11:32,052 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 16:11:32,054 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 16:11:32,058 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 16:11:32,063 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 16:11:32,080 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 16:11:32,096 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.
+2023-06-21 16:11:37,435 [,,,] INFO  org.hibernate.validator.internal.util.Version:21 [background-preinit] - HV000001: Hibernate Validator 6.1.7.Final
+2023-06-21 16:11:37,813 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth] & group[dev]
+2023-06-21 16:11:37,821 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth.yaml] & group[dev]
+2023-06-21 16:11:37,828 [,,,] WARN  com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder:87 [main] - Ignore the empty nacos configuration and get it based on dataId[silence-auth-dev.yaml] & group[dev]
+2023-06-21 16:11:37,828 [,,,] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration:109 [main] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-silence-auth-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-silence-auth,dev'}]
+2023-06-21 16:11:37,849 [,,,] INFO  com.silence.AuthApplication:664 [main] - The following profiles are active: dev
+2023-06-21 16:11:38,447 [,,,] INFO  org.springframework.cloud.context.scope.GenericScope:288 [main] - BeanFactory id=47dc7567-9f92-38a4-a53b-c0f14376507b
+2023-06-21 16:11:38,619 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1f179f51' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 16:11:38,628 [,,,] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:350 [main] - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-21 16:11:38,863 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108 [main] - Tomcat initialized with port(s): 9086 (http)
+2023-06-21 16:11:38,872 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Initializing ProtocolHandler ["http-nio-9086"]
+2023-06-21 16:11:38,872 [,,,] INFO  org.apache.catalina.core.StandardService:173 [main] - Starting service [Tomcat]
+2023-06-21 16:11:38,873 [,,,] INFO  org.apache.catalina.core.StandardEngine:173 [main] - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-06-21 16:11:38,945 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [main] - Initializing Spring embedded WebApplicationContext
+2023-06-21 16:11:38,945 [,,,] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:289 [main] - Root WebApplicationContext: initialization completed in 1086 ms
+2023-06-21 16:11:39,856 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:181 [main] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-21 16:11:40,113 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:181 [main] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 16:11:40,405 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure Or [Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fb1820d, org.springframework.security.web.context.SecurityContextPersistenceFilter@109188b4, org.springframework.security.web.header.HeaderWriterFilter@106f2425, org.springframework.security.web.authentication.logout.LogoutFilter@6cfac0bd, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@357e7113, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1832b0f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76c85485, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dc2c13c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e27b77a, org.springframework.security.web.session.SessionManagementFilter@629cf53c, org.springframework.security.web.access.ExceptionTranslationFilter@f391e52, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68dc2f53]
+2023-06-21 16:11:40,416 [,,,] INFO  org.springframework.security.web.DefaultSecurityFilterChain:51 [main] - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4529048e, org.springframework.security.web.context.SecurityContextPersistenceFilter@4202276, org.springframework.security.web.header.HeaderWriterFilter@3e755d5f, org.springframework.security.web.authentication.logout.LogoutFilter@38b7004d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1db5de29, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2053b761, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34588991, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6addfa22, org.springframework.security.web.session.SessionManagementFilter@501b296a, org.springframework.security.web.access.ExceptionTranslationFilter@2e015ac1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77aeba9b]
+2023-06-21 16:11:40,621 [,,,] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82 [main] - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-21 16:11:40,781 [,,,] INFO  org.apache.coyote.http11.Http11NioProtocol:173 [main] - Starting ProtocolHandler ["http-nio-9086"]
+2023-06-21 16:11:40,796 [,,,] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220 [main] - Tomcat started on port(s): 9086 (http) with context path ''
+2023-06-21 16:11:40,807 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:75 [main] - nacos registry, dev silence-auth 192.168.8.3:9086 register finished
+2023-06-21 16:11:40,865 [,,,] INFO  com.silence.AuthApplication:61 [main] - Started AuthApplication in 3.997 seconds (JVM running for 5.076)
+2023-06-21 16:11:44,694 [,,,] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173 [http-nio-9086-exec-1] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 16:11:44,694 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:525 [http-nio-9086-exec-1] - Initializing Servlet 'dispatcherServlet'
+2023-06-21 16:11:44,695 [,,,] INFO  org.springframework.web.servlet.DispatcherServlet:547 [http-nio-9086-exec-1] - Completed initialization in 1 ms
+2023-06-21 16:11:44,786 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:110 [http-nio-9086-exec-1] - HikariPool-1 - Starting...
+2023-06-21 16:11:45,370 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:123 [http-nio-9086-exec-1] - HikariPool-1 - Start completed.
+2023-06-21 16:11:48,360 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-1] - 用户名:zhangsan客户端：client1
+2023-06-21 16:11:48,492 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-1] - 用户id:3客户端：client1
+2023-06-21 17:16:37,951 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-3] - 用户名:zhangsan客户端：client1
+2023-06-21 17:16:38,413 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-3] - 用户id:3客户端：client1
+2023-06-21 17:20:36,988 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:38 [http-nio-9086-exec-5] - 用户名:zhangsan客户端：client1
+2023-06-21 17:20:37,021 [,,,] INFO  com.silence.auth.infrastructure.facade.UserFacade:48 [http-nio-9086-exec-5] - 用户id:3客户端：client1
+2023-06-21 18:00:56,484 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:145 [Thread-12] - [NotifyCenter] Start destroying Publisher
+2023-06-21 18:00:56,484 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:108 [Thread-1] - [HttpClientBeanHolder] Start destroying common HttpClient
+2023-06-21 18:00:56,510 [,,,] WARN  com.alibaba.nacos.common.notify.NotifyCenter:162 [Thread-12] - [NotifyCenter] Destruction of the end
+2023-06-21 18:00:56,550 [,,,] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder:114 [Thread-1] - [HttpClientBeanHolder] Destruction of the end
+2023-06-21 18:00:56,902 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2023-06-21 18:00:56,932 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:90 [SpringContextShutdownHook] - De-registering from Nacos Server now...
+2023-06-21 18:00:56,946 [,,,] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry:110 [SpringContextShutdownHook] - De-registration finished.
+2023-06-21 18:01:04,614 [,,,] WARN  com.alibaba.nacos.client.naming:72 [SpringContextShutdownHook] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-06-21 18:01:04,615 [,,,] WARN  com.alibaba.nacos.client.naming:79 [SpringContextShutdownHook] - [NamingHttpClientManager] Destruction of the end
+2023-06-21 18:01:04,619 [,,,] WARN  org.springframework.beans.factory.support.DisposableBeanAdapter:349 [SpringContextShutdownHook] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2023-06-21 18:01:04,621 [,,,] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:218 [SpringContextShutdownHook] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-21 18:01:04,633 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:350 [SpringContextShutdownHook] - HikariPool-1 - Shutdown initiated...
+2023-06-21 18:01:04,654 [,,,] INFO  com.zaxxer.hikari.HikariDataSource:352 [SpringContextShutdownHook] - HikariPool-1 - Shutdown completed.

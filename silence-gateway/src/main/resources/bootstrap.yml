@@ -2,10 +2,10 @@ spring:
   application:
     name: silence-gateway
 
-  zipkin:
-    base-url: http://106.13.192.32:9411
-    sender:
-      type: web
+#  zipkin:
+#    base-url: http://106.13.192.32:9411
+#    sender:
+#      type: web
 
   profiles:
     active: dev
@@ -17,17 +17,17 @@ spring:
         # 配置文件的格式
         file-extension: yaml
         # 配置中心的地址
-        server-addr: 106.13.192.32:8848
+        server-addr: 120.24.205.36:8848
         # 配置文件prefix
         prefix: silence-gateway
         #命名空间
         namespace: quiet
 
       discovery:
-        server-addr: 106.13.192.32:8848
+        server-addr: 120.24.205.36:8848
         group: dev
         namespace: quiet
-        ip: 106.13.192.32
+
     gateway:
       routes:
         - id: silence-auth # 路由的id,没有规定规则但要求唯一,建议配合服务名

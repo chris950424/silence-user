@@ -1,0 +1,39 @@
+2023-06-28 03:02:47,506 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:169 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://120.24.205.36:8848， err : Read timed out
+2023-06-28 03:02:47,607 [,,,] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent:189 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - no available server, currentServerAddr : http://120.24.205.36:8848
+2023-06-28 03:02:47,608 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:454 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - [fixed-120.24.205.36_8848-quiet] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 03:02:47,656 [,,,] ERROR com.alibaba.nacos.client.config.impl.ClientWorker:640 [com.alibaba.nacos.client.Worker.longPolling.fixed-120.24.205.36_8848-quiet] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://120.24.205.36:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2023-06-28 09:13:25,557 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-15] - time:Wed Jun 28 09:13:25 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 09:21:08,014 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-17] - time:Wed Jun 28 09:21:08 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 09:50:58,307 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-19] - time:Wed Jun 28 09:50:58 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 09:53:12,776 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-21] - time:Wed Jun 28 09:53:12 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 09:53:12,779 [,,,] WARN  org.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer:97 [boundedElastic-22] - No servers available for service: silence-auth
+2023-06-28 09:55:20,633 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-23] - time:Wed Jun 28 09:55:20 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 09:56:24,098 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-24] - time:Wed Jun 28 09:56:24 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 10:04:32,842 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-25] - time:Wed Jun 28 10:04:32 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 11:00:40,893 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-27] - time:Wed Jun 28 11:00:40 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 11:13:07,876 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-29] - time:Wed Jun 28 11:13:07 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
+2023-06-28 14:36:35,176 [,,,] INFO  com.silence.auth.gateway.filter.SecurityGlobalFilter:50 [boundedElastic-31] - time:Wed Jun 28 14:36:35 CST 2023	 执行了自定义的全局过滤器: MyLogGateWayFilterhello
